@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { NavBarComponent } from '../nav-bar/nav-bar.component';
 import { SectionHomeComponent } from '../section-home/section-home.component';
+import { SectionAboutComponent } from '../section-about/section-about.component';
 
 @Component({
   selector: 'app-portfolio-overview',
   standalone: true,
-  imports: [NavBarComponent, SectionHomeComponent],
+  imports: [NavBarComponent, SectionHomeComponent, SectionAboutComponent],
   templateUrl: './portfolio-overview.component.html',
   styleUrl: './portfolio-overview.component.scss'
 })
