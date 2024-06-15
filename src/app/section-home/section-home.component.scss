@@ -1,0 +1,35 @@
+
+.abril-fatface {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    align-self: center;
+    font-size: 130px;
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 15%;
+    gap: 50px;
+}
+
+
+.text-white {
+    color: white;
+}
+    
+.description {
+    width: 60%;
+    font-weight: lighter;
+}
+        
+.accent-button {
+    align-self: center;
+    width: 15%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #F6B17A;
+    border-style: none;
+    color: white;
+}
