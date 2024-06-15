@@ -1,0 +1,15 @@
+<div class="flex-col" style="margin-top: 30%;">
+    <h1><span class="accent">About</span> me</h1>
+    <div class="flex-col" style="gap: 10px;">
+        <div>Hello, I’m a full-stack developer with a passion for design and frontend development. I hold a Bachelor in
+            Software engineering from the University of Southern Denmark.</div>
+        <div>I’m a hard worker, who’s always open to learn more and challenge myself.</div>
+        <div>In my spare time I like all things tech - cool gadgets, computers, etc. I also enjoy exercising and
+            climbing.</div>
+    </div>
+
+    <h2 style="align-self: center; margin-top: 5%; text-decoration: underline;">What are my interests?</h2>
+    <div class="flex-row" style="justify-content: center; gap: 2%;">
+        <app-interest-card *ngFor="let interest of interests" [interest]="interest"></app-interest-card>
+    </div>
+</div>
