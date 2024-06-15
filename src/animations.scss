@@ -1,0 +1,9 @@
+// To use this animation add the fade-in class to the element and add a --fade-duration style
+.fade-in {
+    animation: fadeIn var(--fade-duration);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% {opacity: 1;}
+}
