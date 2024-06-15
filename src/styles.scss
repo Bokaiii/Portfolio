@@ -3,6 +3,11 @@
 @import url("./animations.scss");
 @import url("./themes.scss");
 
+html {
+    height: 100%;
+    background-color: #2D3250;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -11,6 +16,10 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .text-light {
@@ -40,5 +49,11 @@ body {
 
 .center {
     align-items: center;
+    justify-content: center;
+}
+
+.absolute-center {
+    position: absolute;
+    align-content: center;
     justify-content: center;
 }
