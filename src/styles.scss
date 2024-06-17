@@ -22,6 +22,11 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.max-width {
+    max-width: 1200px;
+    width: 100%;
+}
+
 .text-light {
     font-weight: 300;
     font-style: normal;
@@ -56,4 +61,11 @@ body::-webkit-scrollbar {
     position: absolute;
     align-content: center;
     justify-content: center;
+}
+
+.full-width {
+    max-width: none;
+    width: 100vw;
+    position: absolute;
+    left: calc(-50vw + 50%);
 }

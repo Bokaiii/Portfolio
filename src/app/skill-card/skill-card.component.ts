@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { SkillGroup } from '../../typings';
 
 @Component({
@@ -10,4 +10,9 @@ import { SkillGroup } from '../../typings';
 })
 export class SkillCardComponent {
   @Input() public skillGroup?: SkillGroup;
+  @Output() public toggleSkillGroup = new EventEmitter<SkillGroup>();
+
+  public toggle(): void {
+    this.toggleSkillGroup.emit(this.skillGroup);
+  }
 }
