@@ -1,0 +1,11 @@
+<div>
+    test
+    <div class="flex-row entry-container" *ngFor="let entry in entries">
+        <div class="date">{{entry.startYear}} - {{entry.endYear}}</div>
+        <div class="dot"></div>
+        <div class="description-container">
+            <h4 class="title">{{entry.title}}</h4>
+            <p class="description">{{entry.description}}</p>
+        </div>
+    </div>
+</div>

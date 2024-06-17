@@ -1,0 +1,19 @@
+.button-container {
+    width: 100%;
+    gap: 5%;
+}
+
+button {
+    width: 15%;
+    height: 50px;
+    border-radius: 15px;
+    color: white;
+    background-color: #7077A1;
+    border: none;
+    cursor: pointer;
+}
+
+.disabled {
+    background-color: #444962;
+    color: #808080;
+}

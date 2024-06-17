@@ -1,0 +1,44 @@
+.timeline {
+    position: relative;
+    &before{
+        top: 40px;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 3px;
+        background-color: black;
+        left: 50%;
+        margin-left: 1.5px;
+    }
+}
+
+.entry-container {
+    width: 100%;
+    justify-content: center;
+    transform: translateX(5%);
+}
+
+.date {
+    text-align: end;
+    margin-right: 8%;
+    width: 20%;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    aspect-ratio: 1 / 1;
+    justify-self: center;
+    margin-top: 0.25%;
+    border-radius: 100%;
+}
+
+.description-container {
+    width: 40%;
+    margin-left: 8%;
+}
+
+.title {
+    margin: 0;
+}

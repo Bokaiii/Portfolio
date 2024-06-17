@@ -13,3 +13,10 @@ export interface SkillGroup {
     imagePath: string;
     skills: Skill[];
 }
+
+export interface Experience {
+    startYear: string;
+    endYear: string;
+    title: string;
+    description: string;
+}
