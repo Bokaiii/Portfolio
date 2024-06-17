@@ -1,27 +1,19 @@
-import { NgFor } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Experience } from '../../typings';
+import { NgFor, NgIf } from '@angular/common';
+import { DataPopulationService } from '../services/data-population-service/data-population.service';
 
 @Component({
   selector: 'app-timeline',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, NgIf],
   templateUrl: './timeline.component.html',
   styleUrl: './timeline.component.scss'
 })
 export class TimelineComponent {
-  public entries: Experience[] = [
-    {
-      startYear: '2023',
-      endYear: 'Present',
-      title: 'Java Developer at DXC Technology',
-      description: 'Backend developer working on REST API development'
-    },
-    {
-      startYear: '2022',
-      endYear: '2023',
-      title: 'Synchronizing data across microservices',
-      description: 'Worked in collaboration with EG Digital Welfare to find a solution for synchronizing data across microservices, using the Event Streaming Platform Apache Kafka and the Saga pattern'
-    }
-  ];
+  @Input() public experiences?: Experience[];
+  @Input() public education?: Experience[];
+
+  @Input() public showExperience: boolean = true;
+
 }

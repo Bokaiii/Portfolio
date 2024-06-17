@@ -18,5 +18,5 @@ export interface Experience {
     startYear: string;
     endYear: string;
     title: string;
-    description: string;
+    description: string[];
 }

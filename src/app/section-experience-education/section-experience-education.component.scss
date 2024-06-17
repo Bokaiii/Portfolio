@@ -7,13 +7,16 @@ button {
     width: 15%;
     height: 50px;
     border-radius: 15px;
-    color: white;
-    background-color: #7077A1;
     border: none;
     cursor: pointer;
 }
 
-.disabled {
+.button-enabled {
+    color: white;
+    background-color: #7077A1;
+}
+
+.button-disabled {
     background-color: #444962;
     color: #808080;
 }

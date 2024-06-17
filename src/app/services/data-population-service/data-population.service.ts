@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Interest, SkillGroup } from '../../../typings';
+import { Experience, Interest, SkillGroup } from '../../../typings';
 import { faCode, faCoffee, faGamepad, faMicrochip, faMountainSun, faPlane } from '@fortawesome/free-solid-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
 
@@ -149,4 +149,76 @@ export class DataPopulationService {
     }
   }
 
+  //Experience
+  public getExperience(): Experience[] {
+    return [
+      {
+        startYear: '2023',
+        endYear: 'Present',
+        title: 'Java Developer at DXC Technology',
+        description: ['Backend developer working on REST API development']
+      },
+      {
+        startYear: '2022',
+        endYear: '2023',
+        title: 'Synchronizing data across microservices',
+        description: ['Worked in collaboration with EG Digital Welfare to find a solution for synchronizing data across microservices, using the Event Streaming Platform Apache Kafka and the Saga pattern']
+      },
+      {
+        startYear: '2022',
+        endYear: '',
+        title: 'Student Developer at EG Digital Welfare',
+        description: [
+          'Responsible for managaing responsetime project',
+          'Product maintenance',
+          'Training and handover to new employee'
+        ]
+      },
+      {
+        startYear: '2022',
+        endYear: '2023',
+        title: 'Internship at EG Digital Welfare',
+        description: [
+          'Developed new features in Angular and Java',
+          'Integrated part of a SCRUM team'
+        ]
+      },
+    ];
+  }
+
+  //Education
+  public getEducation(): Experience[] {
+    return [
+      {
+        startYear: '2024',
+        endYear: '',
+        title: 'SAFe certificate',
+        description: []
+      },
+      {
+        startYear: '2019',
+        endYear: '2023',
+        title: 'University of Southern Denmark - Software technology',
+        description: [
+          'Continuous Delivery & DevOps',
+          'Object Oriented Programming',
+          'Software technology in Cyber-Physical Systems',
+          'Component-based software systems',
+          'Human Computer Interaction',
+        ]
+      },
+      {
+        startYear: '2016',
+        endYear: '',
+        title: "Hjælpetræneruddannelse 2 (badminton)",
+        description: []
+      },
+      {
+        startYear: '2015',
+        endYear: '',
+        title: "Hjælpetræneruddannelse 1 (badminton)",
+        description: []
+      },
+    ];
+  }
 }

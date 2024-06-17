@@ -1,11 +1,33 @@
 <div>
-    test
-    <div class="flex-row entry-container" *ngFor="let entry in entries">
-        <div class="date">{{entry.startYear}} - {{entry.endYear}}</div>
-        <div class="dot"></div>
-        <div class="description-container">
-            <h4 class="title">{{entry.title}}</h4>
-            <p class="description">{{entry.description}}</p>
+    <div id="experiences" *ngIf="showExperience" class="flex-col entry-container timeline fade-in"
+        style="--fade-duration: 1s;">
+        <div class="flex-row entry" *ngFor="let experience of experiences">
+            <div class="date">{{experience.startYear}} <span *ngIf="experience.endYear != ''">-
+                    {{experience.endYear}}</span>
+            </div>
+            <div class="dot"></div>
+            <div class="description-container">
+                <h4 class="title">{{experience.title}}</h4>
+                <ul>
+                    <li *ngFor="let item of experience.description">{{item}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="education" *ngIf="!showExperience" class="flex-col entry-container timeline fade-in"
+        style="--fade-duration: 1s;">
+        <div class="flex-row entry" *ngFor="let edu of education">
+            <div class="date">{{edu.startYear}} <span *ngIf="edu.endYear != ''">-
+                    {{edu.endYear}}</span>
+            </div>
+            <div class="dot"></div>
+            <div class="description-container">
+                <h4 class="title">{{edu.title}}</h4>
+                <ul>
+                    <li *ngFor="let item of edu.description">{{item}}</li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

@@ -2,9 +2,12 @@
     <h1 class="accent">Experience <span class="white">&</span> Education</h1>
 
     <div class="flex-row center button-container">
-        <button>Experience</button>
-        <button class="disabled">Education</button>
+        <button id="button-experience" (click)="toggle()"
+            [ngClass]="!showExperience ? 'button-disabled' : 'button-enabled'">Experience</button>
+        <button id="button-education" (click)="toggle()"
+            [ngClass]="showExperience ? 'button-disabled' : 'button-enabled'">Education</button>
     </div>
 
-    <app-timeline class="max-width"></app-timeline>
+    <app-timeline class="max-width" [experiences]="experiences" [education]="education"
+        [showExperience]="showExperience"></app-timeline>
 </div>

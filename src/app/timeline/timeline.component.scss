@@ -1,18 +1,21 @@
 .timeline {
     position: relative;
-    &before{
-        top: 40px;
-        bottom: 0;
+    &:before {
+        top: 0px;
+        bottom: 0px;
         position: absolute;
         content: " ";
-        width: 3px;
-        background-color: black;
-        left: 50%;
-        margin-left: 1.5px;
+        background-color: white;
+        width: 1px;
+        left: 45%;
     }
 }
 
 .entry-container {
+    gap: 50px;
+}
+
+.entry {
     width: 100%;
     justify-content: center;
     transform: translateX(5%);
@@ -37,6 +40,10 @@
 .description-container {
     width: 40%;
     margin-left: 8%;
+}
+
+.description {
+    font-size: 80%;
 }
 
 .title {
