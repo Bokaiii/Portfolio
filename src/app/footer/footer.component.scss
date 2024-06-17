@@ -17,4 +17,10 @@
 a {
     color: white;
     text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
