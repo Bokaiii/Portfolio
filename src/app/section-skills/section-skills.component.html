@@ -10,6 +10,7 @@
     <div id="skill-accordion" class="accordion-background full-width scale-y" *ngIf="showSkillGroup" style="--scale-duration: 0.5s; --fade-duration: 1s;">
         <!-- Limit width again -->
         <div style="max-width: 1200px; width: 100%;">
+            <h3 style="text-align: center;">{{this.activeSkillGroup?.title}}</h3>
             <div class="skill-container">
                 <div class="skill" *ngFor="let skill of activeSkillGroup?.skills">
                     <span>{{skill.title}}</span>

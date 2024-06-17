@@ -45,7 +45,7 @@ export class DataPopulationService {
   public getFrontendSkills(): SkillGroup {
     return {
       title: 'Frontend',
-      image: undefined,
+      imagePath: 'assets/img/frontend.png',
       skills: [
         {
           title: 'TypeScript',
@@ -86,7 +86,7 @@ export class DataPopulationService {
   public getBackendSkills(): SkillGroup {
     return {
       title: 'Backend',
-      image: undefined,
+      imagePath: 'assets/img/backend.png',
       skills: [
         {
           title: 'Java',
@@ -119,7 +119,7 @@ export class DataPopulationService {
   public getTechnicalSkills(): SkillGroup {
     return {
       title: 'Technical',
-      image: undefined,
+      imagePath: 'assets/img/technical.png',
       skills: [
         {
           title: 'Git',

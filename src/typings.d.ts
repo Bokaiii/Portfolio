@@ -10,6 +10,6 @@ export interface Skill {
 
 export interface SkillGroup {
     title: string;
-    image?: HTMLImageElement;
+    imagePath: string;
     skills: Skill[];
 }
