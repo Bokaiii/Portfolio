@@ -8,12 +8,37 @@
     100% {opacity: 1;}
 }
 
+.fade-in-delay {
+    animation: fadeInDelay var(--fade-duration);
+}
+
+@keyframes fadeInDelay {
+    0% { opacity: 0%; }
+    50% { opacity: 0%; }
+    100% { opacity: 100%; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% {opacity: 1;}
+}
+
 // To use this animation add the fade-in class to the element and add a --slide-duration style
 .slide-in {
-    animation: slideIn var(--slide-duration)
+    animation: slideIn var(--slide-duration);
 }
 
 @keyframes slideIn {
     0% { transform: translateX(-100px); }
     100% { transform: translateX(0); }
+}
+
+.scale-y {
+    animation: scaleY var(--scale-duration);
+    transform-origin: top;
+}
+
+@keyframes scaleY {
+    0% { transform: scaleY(0%) }
+    100% { transform: scaleY(100%) }
 }
