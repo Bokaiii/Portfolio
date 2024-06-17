@@ -17,4 +17,8 @@ export class NavBarComponent {
     const element = document.getElementById(elementId);
     element?.scrollIntoView({ behavior: "smooth" });
   }
+
+  public reloadPage(): void {
+    window.location.reload();
+  }
 }
