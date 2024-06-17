@@ -64,8 +64,7 @@ body::-webkit-scrollbar {
 }
 
 .full-width {
-    max-width: none;
     width: 100vw;
-    position: absolute;
+    position: relative;
     left: calc(-50vw + 50%);
 }

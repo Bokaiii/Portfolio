@@ -1,8 +1,7 @@
-<div id="overview-container" class="overview-container white">
-    <div id="container max-width" class="flex-col" style="gap: 150px;">
-        <app-nav-bar class="fade-in" style="--fade-duration: 2s;"></app-nav-bar>
-        <app-section-home class="fade-in" style="--fade-duration: 4s; margin-bottom: 100px;"></app-section-home>
-        <app-section-about class="fade-in" style="--fade-duration: 5s;"></app-section-about>
-        <app-section-skills></app-section-skills>
-    </div>
+<div id="overview-container" class="overview-container flex-col white">
+    <app-nav-bar class="max-width fade-in" style="--fade-duration: 2s;"></app-nav-bar>
+    <app-section-home id="section-home" class="max-width fade-in" style="--fade-duration: 4s;"></app-section-home>
+    <app-section-about id="section-about" class="max-width fade-in" style="--fade-duration: 5s;"></app-section-about>
+    <app-section-skills id="section-skills" class="max-width"></app-section-skills>
+    <app-footer></app-footer>
 </div>
