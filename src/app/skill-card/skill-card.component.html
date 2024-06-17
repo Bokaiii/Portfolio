@@ -1,4 +1,4 @@
-<div class="flex-col center card" (click)="toggle()">
+<div class="flex-col center card" (click)="toggle()" [ngClass]="active ? 'clicked' : ''">
     <img class="icon" src="{{skillGroup?.imagePath}}">
     <div class="title">{{skillGroup?.title}}</div>
 </div>

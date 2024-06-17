@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { SkillCardComponent } from '../skill-card/skill-card.component';
 import { DataPopulationService } from '../services/data-population-service/data-population.service';
 import { SkillGroup } from '../../typings';
-import { NgFor, NgIf } from '@angular/common';
+import { NgClass, NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-section-skills',
   standalone: true,
-  imports: [SkillCardComponent, NgFor, NgIf],
+  imports: [SkillCardComponent, NgFor, NgIf, NgClass],
   templateUrl: './section-skills.component.html',
   styleUrl: './section-skills.component.scss'
 })
@@ -32,6 +32,7 @@ export class SectionSkillsComponent implements OnInit {
     //If already active, toggle
     if(skillGroup == this.activeSkillGroup) {
       this.showSkillGroup = !this.showSkillGroup;
+      this.activeSkillGroup = undefined;
     } else {
       this.activeSkillGroup = skillGroup;
       this.showSkillGroup = true;

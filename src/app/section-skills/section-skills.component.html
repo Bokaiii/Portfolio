@@ -2,12 +2,16 @@
     <h1 style="text-align: center;">My <span class="accent">skills</span></h1>
 
     <div class="flex-row skill-group-container">
-        <app-skill-card [skillGroup]="frontendSkills" (toggleSkillGroup)="toggleSkillGroup($event)"></app-skill-card>
-        <app-skill-card [skillGroup]="backendSkills" (toggleSkillGroup)="toggleSkillGroup($event)"></app-skill-card>
-        <app-skill-card [skillGroup]="technicalSkills" (toggleSkillGroup)="toggleSkillGroup($event)"></app-skill-card>
+        <app-skill-card [skillGroup]="frontendSkills" (toggleSkillGroup)="toggleSkillGroup($event)"
+            [active]="activeSkillGroup == frontendSkills"></app-skill-card>
+        <app-skill-card [skillGroup]="backendSkills" (toggleSkillGroup)="toggleSkillGroup($event)"
+            [active]="activeSkillGroup == backendSkills"></app-skill-card>
+        <app-skill-card [skillGroup]="technicalSkills" (toggleSkillGroup)="toggleSkillGroup($event)"
+            [active]="activeSkillGroup == technicalSkills"></app-skill-card>
     </div>
 
-    <div id="skill-accordion" class="accordion-background full-width scale-y" *ngIf="showSkillGroup" style="--scale-duration: 0.5s; --fade-duration: 1s;">
+    <div id="skill-accordion" class="accordion-background full-width scale-y" *ngIf="showSkillGroup"
+        style="--scale-duration: 0.5s; --fade-duration: 1s;">
         <!-- Limit width again -->
         <div style="max-width: 1200px; width: 100%;">
             <h3 style="text-align: center;">{{this.activeSkillGroup?.title}}</h3>
