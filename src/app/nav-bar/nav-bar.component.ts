@@ -12,4 +12,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 export class NavBarComponent {
   faMoon = faMoon
   faFlag = faFlag
+
+  public scrollToElement(elementId: string): void {
+    const element = document.getElementById(elementId);
+    element?.scrollIntoView({ behavior: "smooth" });
+  }
 }
