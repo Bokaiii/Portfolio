@@ -29,6 +29,7 @@ export class SectionSkillsComponent implements OnInit {
   }
 
   public toggleSkillGroup(skillGroup: SkillGroup): void {
+    //If already active, toggle
     if(skillGroup == this.activeSkillGroup) {
       this.showSkillGroup = !this.showSkillGroup;
     } else {

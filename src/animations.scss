@@ -8,19 +8,10 @@
     100% {opacity: 1;}
 }
 
-.fade-in-delay {
-    animation: fadeInDelay var(--fade-duration);
-}
-
 @keyframes fadeInDelay {
     0% { opacity: 0%; }
     50% { opacity: 0%; }
     100% { opacity: 100%; }
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0;}
-    100% {opacity: 1;}
 }
 
 // To use this animation add the fade-in class to the element and add a --slide-duration style
@@ -36,6 +27,10 @@
 .scale-y {
     animation: scaleY var(--scale-duration);
     transform-origin: top;
+}
+
+.scale-y * {
+    animation: fadeInDelay var(--fade-duration);
 }
 
 @keyframes scaleY {
