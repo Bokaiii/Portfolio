@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faFlag, faMoon } from '@fortawesome/free-regular-svg-icons'
+import { faFlag, faMoon, faSun } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ThemeService } from '../services/theme-service/theme-service.service';
 
@@ -13,11 +13,16 @@ import { ThemeService } from '../services/theme-service/theme-service.service';
 export class NavBarComponent implements OnInit {
   faMoon = faMoon
   faFlag = faFlag
+  faSun = faSun;
   
   constructor(private themeService: ThemeService) {  }
 
   ngOnInit(): void {
     this.themeService.setDarkMode();
+  }
+
+  public isDarkMode(): boolean {
+    return this.themeService.isDark();
   }
 
   public toggleDarkMode(): void {
