@@ -25,7 +25,11 @@ export class SectionExperienceEducationComponent implements OnInit{
     this.education = this.dataService.getEducation();
   }
 
-  public toggle(): void {
-    this.showExperience = !this.showExperience;
+  public toggleExperience(): void {
+    this.showExperience = true;
+  }
+
+  public toggleEducation(): void {
+    this.showExperience = false;
   }
 }

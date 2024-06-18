@@ -2,9 +2,9 @@
     <h1 class="title">Experience <span class="text-color">&</span> Education</h1>
 
     <div class="flex-row center button-container">
-        <button id="button-experience" (click)="toggle()"
+        <button id="button-experience" (click)="toggleExperience()"
             [ngClass]="!showExperience ? 'button-disabled' : 'button-enabled'">Experience</button>
-        <button id="button-education" (click)="toggle()"
+        <button id="button-education" (click)="toggleEducation()"
             [ngClass]="showExperience ? 'button-disabled' : 'button-enabled'">Education</button>
     </div>
 
