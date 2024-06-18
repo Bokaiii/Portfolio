@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { faFlag, faMoon } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ThemeService } from '../services/theme-service/theme-service.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -9,9 +10,19 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.scss'
 })
-export class NavBarComponent {
+export class NavBarComponent implements OnInit {
   faMoon = faMoon
   faFlag = faFlag
+  
+  constructor(private themeService: ThemeService) {  }
+
+  ngOnInit(): void {
+    this.themeService.setDarkMode();
+  }
+
+  public toggleDarkMode(): void {
+    this.themeService.toggleTheme();
+  }
 
   public scrollToElement(elementId: string): void {
     const element = document.getElementById(elementId);

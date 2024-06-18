@@ -12,6 +12,7 @@
 .container {
     margin-top: 5%;
     gap: 50px;
+    color: var(--text-color);
 }
     
 .description {
@@ -24,12 +25,12 @@
     width: 15%;
     height: 40px;
     border-radius: 20px;
-    background-color: #F6B17A;
+    background-color: var(--accent-color);
     border-style: none;
-    color: white;
+    color: var(--text-color);
 }
 
 a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
 }

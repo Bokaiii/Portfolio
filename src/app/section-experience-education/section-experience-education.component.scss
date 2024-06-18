@@ -1,6 +1,11 @@
+.text-color {
+    color: var(--text-color);
+}
+
 .button-container {
     width: 100%;
     gap: 5%;
+    color: var(--text-color);
 }
 
 button {
@@ -12,11 +17,11 @@ button {
 }
 
 .button-enabled {
-    color: white;
-    background-color: #7077A1;
+    color: var(--text-color);
+    background-color: var(--base-highlight-2);
 }
 
 .button-disabled {
-    background-color: #444962;
-    color: #808080;
+    background-color: var(--base-highlight-disabled);
+    color: var(--text-disabled);
 }
