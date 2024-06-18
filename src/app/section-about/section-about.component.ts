@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { InterestCardComponent } from '../interest-card/interest-card.component';
 import { CommonModule, NgFor } from '@angular/common';
-import { DataPopulationService } from '../services/data-population-service/data-population.service';
+import { DataService } from '../services/data-service/data.service';
 import { Interest } from '../../typings';
 
 @Component({
@@ -14,10 +14,10 @@ import { Interest } from '../../typings';
 export class SectionAboutComponent implements OnInit {
   public interests?: Interest[];
 
-  constructor (private dataPopulationService: DataPopulationService) {  }
+  constructor (private dataService: DataService) {  }
   
   ngOnInit(): void {
     // Import interests
-    this.interests = this.dataPopulationService.getInterest();
+    this.interests = this.dataService.getInterest();
   }
 }

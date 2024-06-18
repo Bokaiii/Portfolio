@@ -6,7 +6,7 @@ import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
 @Injectable({
   providedIn: 'root'
 })
-export class DataPopulationService {
+export class DataService {
 
   constructor() { }
 

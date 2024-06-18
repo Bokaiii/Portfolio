@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Experience } from '../../typings';
 import { NgFor, NgIf } from '@angular/common';
-import { DataPopulationService } from '../services/data-population-service/data-population.service';
 
 @Component({
   selector: 'app-timeline',

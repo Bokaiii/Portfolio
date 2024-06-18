@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SkillCardComponent } from '../skill-card/skill-card.component';
-import { DataPopulationService } from '../services/data-population-service/data-population.service';
+import { DataService } from '../services/data-service/data.service';
 import { SkillGroup } from '../../typings';
 import { NgClass, NgFor, NgIf } from '@angular/common';
 
@@ -20,7 +20,7 @@ export class SectionSkillsComponent implements OnInit {
   public activeSkillGroup?: SkillGroup;
   public showSkillGroup: boolean = false;
 
-  constructor( private dataService: DataPopulationService ) {}
+  constructor( private dataService: DataService ) {}
 
   ngOnInit(): void {
     this.frontendSkills = this.dataService.getFrontendSkills();

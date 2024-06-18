@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TimelineComponent } from '../timeline/timeline.component';
-import { DataPopulationService } from '../services/data-population-service/data-population.service';
+import { DataService } from '../services/data-service/data.service';
 import { Experience } from '../../typings';
 import { NgClass } from '@angular/common';
 
@@ -18,7 +18,7 @@ export class SectionExperienceEducationComponent implements OnInit{
 
   public showExperience: boolean = true;
 
-  constructor(private dataService: DataPopulationService) {  }
+  constructor(private dataService: DataService) {  }
 
   ngOnInit(): void {
     this.experiences = this.dataService.getExperience();
