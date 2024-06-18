@@ -166,7 +166,7 @@ export class DataPopulationService {
       },
       {
         startYear: '2022',
-        endYear: '',
+        endYear: '2023',
         title: 'Student Developer at EG Digital Welfare',
         description: [
           'Responsible for managaing responsetime project',
@@ -176,7 +176,7 @@ export class DataPopulationService {
       },
       {
         startYear: '2022',
-        endYear: '2023',
+        endYear: '',
         title: 'Internship at EG Digital Welfare',
         description: [
           'Developed new features in Angular and Java',
