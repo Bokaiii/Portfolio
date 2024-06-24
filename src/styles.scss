@@ -4,7 +4,7 @@
 @import url("./themes.scss");
 
 //Font
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,400;&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&font-style=normal');
 
 html {
     height: 100%;
@@ -17,6 +17,8 @@ body {
 
     // Global font
     font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body::-webkit-scrollbar {
