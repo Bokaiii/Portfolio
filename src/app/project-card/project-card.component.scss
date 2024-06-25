@@ -18,7 +18,7 @@
 
 .project-card:hover .description {
     max-height: 200px;
-    transition: 2s;
+    transition: 2.5s;
 }
 
 .info-container {
@@ -41,7 +41,6 @@
     line-height: 20px;
     text-overflow: ellipsis;
     overflow: hidden;
-    transition: 0.1s;
     transition-timing-function: ease-in;
 }
 
