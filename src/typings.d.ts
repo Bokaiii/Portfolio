@@ -20,3 +20,10 @@ export interface Experience {
     title: string;
     description: string[];
 }
+
+export interface Project {
+    title: string;
+    description: string;
+    githubLink: string;
+    imagePath: string;
+}

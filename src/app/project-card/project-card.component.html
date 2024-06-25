@@ -1,0 +1,11 @@
+<div class="project-card" style="--trans-duration: 0.5s; position: relative; overflow: hidden;">
+    <img src="{{project.imagePath}}" class="image">
+    <div *ngIf="project.imagePath != ''" class="image-gradient"></div>
+    <div class="info-container" style="z-index: 3;">
+        <span class="title">{{project.title}}</span>
+        <p class="description">{{project.description}}</p>
+        <button *ngIf="project.githubLink != ''" class="button">
+            <a href="{{project.githubLink}}" target="_blank">GitHub</a>
+        </button>
+    </div>
+</div>

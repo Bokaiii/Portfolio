@@ -9,7 +9,8 @@
     --accent-color: #F6B17A;
     --accent-bg: #F6B17A;
     --accent-gradient: linear-gradient(to right,#F6B17A, #F68226);
-    --black : #000000;
+    --project-image-gradient: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0));
+    --black: #000000;
 }
 
 .lightTheme {
@@ -22,5 +23,6 @@
     --text-disabled: #B9B9B9;
     --accent-color: #F6B17A;
     --accent-gradient: linear-gradient(to right,#F6B17A, #F68226);
-    --black : #000000;
+    --project-image-gradient: linear-gradient(rgba(255, 255, 255, 0.2), rgb(255, 255, 255));
+    --black: #000000;
 }
