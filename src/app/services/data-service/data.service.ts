@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Experience, Interest, SkillGroup } from '../../../typings';
+import { Experience, Interest, Project, SkillGroup } from '../../../typings';
 import { faCode, faCoffee, faGamepad, faMicrochip, faMountainSun, faPlane } from '@fortawesome/free-solid-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
 
@@ -210,15 +210,45 @@ export class DataService {
       {
         startYear: '2016',
         endYear: '',
-        title: "Hjælpetræneruddannelse 2 (badminton)",
+        title: "Assistant coach 2 (badminton)",
         description: []
       },
       {
         startYear: '2015',
         endYear: '',
-        title: "Hjælpetræneruddannelse 1 (badminton)",
+        title: "Assistant coach 1 (badminton)",
         description: []
       },
+    ];
+  }
+
+  //Projects (**SHOULD ONLY CONTAIN 4)
+  public getProjects(): Project[] {
+    return [
+      {
+        title: 'Portfolio',
+        description: 'A personal portfolio website, designed in Figma and written in Angular. This project tested my frontend skills with animations, themes, components, etc.',
+        githubLink: 'https://github.com/Bokaiii/Portfolio',
+        imagePath: 'assets/img/portfolio.png'
+      },
+      {
+        title: '...',
+        description: '...',
+        githubLink: '',
+        imagePath: ''
+      },
+      {
+        title: '...',
+        description: '...',
+        githubLink: '',
+        imagePath: ''
+      },
+      {
+        title: '...',
+        description: '...',
+        githubLink: '',
+        imagePath: ''
+      }
     ];
   }
 }

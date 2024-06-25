@@ -5,7 +5,7 @@ import { SectionAboutComponent } from '../section-about/section-about.component'
 import { SectionSkillsComponent } from '../section-skills/section-skills.component';
 import { FooterComponent } from '../footer/footer.component';
 import { SectionExperienceEducationComponent } from '../section-experience-education/section-experience-education.component';
-import { ThemeService } from '../services/theme-service/theme-service.service';
+import { SectionProjectsComponent } from '../section-projects/section-projects.component';
 
 @Component({
   selector: 'app-portfolio-overview',
@@ -15,8 +15,9 @@ import { ThemeService } from '../services/theme-service/theme-service.service';
     SectionHomeComponent,
     SectionAboutComponent,
     SectionSkillsComponent,
-    FooterComponent,
-    SectionExperienceEducationComponent],
+    SectionExperienceEducationComponent,
+    SectionProjectsComponent,
+    FooterComponent],
   templateUrl: './portfolio-overview.component.html',
   styleUrl: './portfolio-overview.component.scss'
 })

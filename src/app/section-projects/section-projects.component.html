@@ -1,0 +1,16 @@
+<div class="container" style="width: 100%; height: 100%; display: flex; flex-direction: row; gap: 2%;">
+    <div class="col">
+        <app-project-card *ngFor="let project of projects" [project]="project"></app-project-card>
+    </div>
+    <div class="section-description">
+        <h1 class="accent">Projects</h1>
+        <p class="description">
+            This section highlights some of the recent projects I have worked on, outside of a professional setting. For each project I have provided a short description, as well as a link to the GitHub repository.
+        </p>
+        <div class="pos-bottom description">
+            Want a closer look at some of my works? Find me on GitHub!
+            <a href="https://github.com/Bokaiii" target="_blank"><fa-icon [icon]="faGitHub"></fa-icon></a>
+        </div>
+
+    </div>
+</div>
