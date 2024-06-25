@@ -210,13 +210,13 @@ export class DataService {
       {
         startYear: '2016',
         endYear: '',
-        title: "Hjælpetræneruddannelse 2 (badminton)",
+        title: "Assistant coach 2 (badminton)",
         description: []
       },
       {
         startYear: '2015',
         endYear: '',
-        title: "Hjælpetræneruddannelse 1 (badminton)",
+        title: "Assistant coach 1 (badminton)",
         description: []
       },
     ];
